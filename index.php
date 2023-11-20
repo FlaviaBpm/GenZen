@@ -1,5 +1,6 @@
-<?php get_header(); ?>
+// index.php
+<?php require 'header.php'; ?>
 
-<p>Bonjour tout le monde</p>
+<p>Bienvenue sur la page d'accueil !</p>
 
-<?php get_footer(); ?>
+<?php require 'footer.php'; ?> 

@@ -1,0 +1,29 @@
+/* Baground page */
+.body {
+    background-color: #FFEDF8;
+}
+
+/* Navbar */
+
+
+.navbar-collapse{
+    justify-content: flex-end ;
+    padding: 5px;
+}
+
+.container-fluid{
+    margin: 150px;
+    padding-left: 40%;
+
+
+}
+
+
+
+
+/* Footer*/
+.footer-fond {
+    background-color: #474747;
+    padding: 50px;
+    color: #FFF;
+}
