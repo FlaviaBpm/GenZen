@@ -1,4 +1,4 @@
-<?php require 'header.php'; ?>
+<?php get_header(); ?>
 
 <form>
 <!--Page d'accueil-->
@@ -79,4 +79,4 @@
         </section>
 </form>
 
-<?php require 'footer.php'; ?>
+<?php get_footer(); ?>
