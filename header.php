@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GenZen</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/page.css">
   <?php wp_head(); ?>
 </head>
-<body style="background :#FFEDF8">
+<body style="background :#">
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">

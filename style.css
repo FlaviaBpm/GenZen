@@ -4,36 +4,3 @@ Author: Flavia & Souhella
 Version: 1.0
 */
 
-/* Baground page */
-.body {
-  background-color: #FFEDF8;
-}
-
-.h2{
-  font-family: cooper-black-std, serif;
-font-style: normal;
-font-weight: 400;
-}
-
-
-
-/* Navbar */
-.navbar-collapse{
-  justify-content: flex-end ;
-  padding: 5px;
-}
-
-
-
-#logo {
-  width:100px;
-}
-
-
-/* Footer*/
-.bg {
-  background-color: #474747;
-}
-
-
-/* Symptomes */
