@@ -1,3 +1,4 @@
+<?php /* Template Name: Articles Page */ ?>
 <?php get_header(); ?>
                 <section>
                     <div class="container">

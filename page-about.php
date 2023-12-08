@@ -9,21 +9,21 @@
                 <div class="container col-9">
                     <div class="row">
                       <div class="col order-last">
-                        <div class="image-acceuil">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/fond-accueil-removebg-preview.png" alt="image fond d'accueil" height="370px">
+                        <div class="image-accueil">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/img/fond-accueil-removebg-preview.png" alt="image fond d'accueil" height="400px">
                         </div>
                       </div>
                       <div class="col order-first">
                         <div class="card-accueil">
                             <div class="card-body">
-                              <h2 class="card-title" style="font-family: cooper-black-std">Cultivez votre sérinité mental</h2>
+                              <h2 class="card-title">Cultivez votre sérinité mental</h2>
               <br>
 
-                              <h5 class="card2-title" style="color:#F4B425"> Comme les fleurs, donnez-vous le temps de  grandir et de vous épanouir</h5>
+                              <h5 class="card2-title"> Comme les fleurs, donnez-vous le temps de  grandir et de vous épanouir</h5>
 
               <br>
                               <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                              <a href="#" class="btn btn-dark">Commencer le test</a>
+                              <a href="#" class="btn btn-dark">Démarrer le test !</a>
                             </div>
                           </div>
                         </div>
@@ -34,8 +34,7 @@
 
 <br><br><br><br><br><br><br>
               <!--Qui sommes-nous-->
-              <div class="container" style="background-color:white;">
-                <div class="container">
+              <div class="container-who">
                   <div class="row justify-content-start">
                   <div class="row justify-content-around">
                     <div class="col-4">
@@ -44,12 +43,8 @@
                     <div class="col-4">
                       <h2>Qui sommes-nous?</h2>
                       <br>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        <br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        <br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-                        <br><br>
-                        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                      <p class="card-text">Nous sommes deux passionnés dévoués à la cause de la santé mentale des jeunes. Forts de notre conviction commune que chaque jeunes mérite de se sentir compris, soutenu et écouté, nous avons uni nos compétences pour créer « GenZen », une plateforme en ligne innovante dédiée au bien-être mental des jeunes d’aujourd’hui.
+« GenZen» est bien plus qu’un simple site web. C’est une ressource dynamique conçue pour aider les jeunes à naviguer dans les complexités de leur santé mentale. </p>
                         <a href="#" class="btn btn-dark">En savoir +
                         </a>
 

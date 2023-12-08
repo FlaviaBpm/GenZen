@@ -11,6 +11,9 @@
   <?php endwhile; ?>
 </ul>
 
+
+coucou
+
 <!-- Appel de notre 'footer' sur la page -->
 <?php get_footer(); ?>
 

@@ -14,7 +14,7 @@ function wpbootstrap_styles_scripts(){
 add_action('wp_enqueue_scripts', 'wpbootstrap_styles_scripts'); // function qui va nous permettre de charger des function (perso ou autre a la chaine)
 
 /**gerer menu */
-register_nav_menu('header','About','Actualités',);
+register_nav_menu('header','A Propos',);
 function monthem_menu_class($classes){
 $classes[] = 'nav-item';
 return $classes;

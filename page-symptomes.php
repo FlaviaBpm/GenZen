@@ -1,6 +1,5 @@
+<?php /* Template Name: Page symp */ ?>
 <?php get_header(); ?>
-
-
 
 
 <section>

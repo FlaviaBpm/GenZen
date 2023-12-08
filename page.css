@@ -1,15 +1,29 @@
 
 
-.body {
+body {
+  font-family: 'Poppins';
     background-color: #FFEDF8;
   }
   
 
-.h2{
-    font-family: cooper-black-std, serif;
-  font-style: normal;
+h2{
+    font-family: 'Cooper Std Black';
+    font-size: 55px;
   font-weight: 400;
   }
   
+h5{
+  color: #F4B425;
+  font-weight: bold;
+}
 
-  
+.text-uppercase h5 {
+  color:#FFF;
+  font-weight: bold;
+}
+.container-who {
+  background-color: #FFF;
+  margin: 0%;
+  width: 100%;
+  justify-content: center;
+}
