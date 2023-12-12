@@ -7,7 +7,13 @@
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">A propos de GenZen</h5>
 
-          <ul class="list-unstyled mb-0">
+
+          <?php wp_nav_menu([
+            'theme_location'=>'footer',
+            'container' => false, 
+            'menu_class' => 'list-unstyled mb-0'  
+          ])?>
+          <ul class="">
             <li>
               <a href="#!" class="text-white">Mentions Légales</a>
             </li>

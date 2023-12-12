@@ -1,7 +1,6 @@
 <?php get_header(); ?>
-<br><br><br>
+
     <section>
-        <div class="container">
           <form>
 
               <!--Page d'accueil-->
@@ -10,20 +9,24 @@
                     <div class="row">
                       <div class="col order-last">
                         <div class="image-acceuil">
-                            <img src="<?php echo get_template_directory_uri();?>/assets/img/fond-accueil-removebg-preview.png" alt="image fond d'accueil" height="370px">
+                            <img src="<?php echo get_template_directory_uri();?>/assets/img/Groupe 1140.png" alt="image fond d'accueil" height="450px">
                         </div>
                       </div>
                       <div class="col order-first">
                         <div class="card-accueil">
-                            <div class="card-body">
-                              <h2 class="card-title" style="font-family: cooper-black-std">Cultivez votre sérinité mental</h2>
-              <br>
-
+                            <div class="card-body-1">
+                              <h1 class="card-title">Cultivez votre sérinité mental</h1>
+<br>
                               <h5 class="card2-title" style="color:#F4B425"> Comme les fleurs, donnez-vous le temps de  grandir et de vous épanouir</h5>
+<br>
+                              <h7 class="card-text"> Découvrez notre quiz santé mentale pour les jeunes ! Explorez des questions engageantes, 
+                                recevez des articles personnalisés et renforcez votre bien-être émotionnel. Investissez dans votre équilibre 
+                                mental dès aujourd'hui !
+                              </h7>
 
-              <br>
-                              <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                              <a href="#" class="btn btn-dark">Commencer le test</a>
+                              <br><br>
+                              <a href="#" class="btn btn-primary">Démarrer le test</a>
+
                             </div>
                           </div>
                         </div>
@@ -31,64 +34,64 @@
                   </div>
               </div>
 
-
-<br><br><br><br><br><br><br>
-              <!--Qui sommes-nous-->
-              <div class="container" style="background-color:white;">
-                <div class="container">
-                  <div class="row justify-content-start">
-                  <div class="row justify-content-around">
-                    <div class="col-4">
-                      <img src="<?php echo get_template_directory_uri();?>/assets/img/Who.png" alt="" style="height:50%">
-                      </div>
-                    <div class="col-4">
-                      <h2>Qui sommes-nous?</h2>
-                      <br>
-                      <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        <br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        <br><br>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-                        <br><br>
-                        Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                        <a href="#" class="btn btn-dark">En savoir +
-                        </a>
-
-                    </div>
-                  </div>
-                  </div>
-                </div>
-</div>
-
-
-<br>
-
-
+<!--Qui sommes-nous-->
+    <div class="row justify-content-between bg-white" style="height:730px;">
+      <div class="col-4">
+        <br><br>
+        <img src="<?php echo get_template_directory_uri();?>/assets/img/Who.png" alt="" style="height:76%">
+      </div>
+        <div class="col-4">
+          <br><br><br><br><br><br><br><br><br>
+          <h1>Qui sommes-nous?</h1>
+          <br>
+          <p class="card-text">Nous sommes deux passionnés dévoués à la cause de la santé mentale des jeunes, 
+              nous avons uni nos compétences pour créer GenZen, une plateforme en ligne innovante dédiée au bien-être 
+              mental des jeunes d’aujourd’hui. GenZen est bien plus qu’un simple site web. C’est une ressource dynamique 
+              conçue pour aider les jeunes à naviguer dans les complexités de leur santé mentale. Au cœur de notre 
+              plateforme se trouve un quiz d’auto-évaluation minutieusement élaboré…
+          </p><br>
+            <a href="#" class="btn btn-secondary">En savoir +</a>
+        </div>
+    </div>
+                  
               <!--Mission-->
+              <br><br><br><br><br>
+
                     <section class="page-section" id="services">
                           <div class="container">
                               <div class="text-center">
-                                  <h2 class="section-heading" style="font-family: cooper-black-std;">Notre Mission</h2>
+                                  <h1 class="section-heading" style="font-family: cooper-black-std;">Notre Mission</h1>
                               </div>
                               <br><br><br>
 
                               <div class="row text-center">
                                   <div class="col-md-4">
-                                      <h4 class="my-3">lorem</h4>
-                                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                      <h4 class="my-3">Ecoute</h4>
+                                      <p class="text-muted">Nous offrons un espace confidentiel, sans jugement, où vous pouvez vous exprimer librement</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                                        </svg>
                                   </div>
                                   <div class="col-md-4">
-                                      <h4 class="my-3">lorem</h4>
-                                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                      <h4 class="my-3">Soutien</h4>
+                                      <p class="text-muted">Fournir des contacts professionnels adaptés aux besoins individuels des utilisateurs, garantissant une assistance ciblée.</p>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                                        </svg>
                                   </div>
                                   <div class="col-md-4">
-                                      <h4 class="my-3">lorem</h4>
-                                      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                                      <h4 class="my-3">Autonomie</h4>
+                                      <p class="text-muted">Encourager les utilisateurs à prendre en charge leur propre bien-être mental.
+                                        Fournir des outils et des informations qui </p>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-patch-plus-fill" viewBox="0 0 16 16">
+                                          <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zM8.5 6v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 1 0"/>
+                                          </svg>
                                   </div>
                               </div>
                           </div>
                       </section>
           </form>       
-        </div>
       </section>
+      <br><br><br><br>
 
 <?php get_footer(); ?>

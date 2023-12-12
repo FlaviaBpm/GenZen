@@ -1,15 +1,17 @@
 <?php get_header(); ?>
-   
-   
-   <style>
+    <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f5f5f5;
-            color: #red;
+            color: #333;
             text-align: center;
             padding: 50px;
         }
 
+        h1 {
+            font-size: 3em;
+            color: #e74c3c;
+        }
 
         p {
             font-size: 1.2em;
@@ -24,7 +26,7 @@
         }
 
         a {
-            color: red;
+            color: #3498db;
             text-decoration: none;
             font-weight: bold;
         }
