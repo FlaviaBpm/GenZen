@@ -21,20 +21,14 @@
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase"> Service Client</h5>
+          <h5 class="text-uppercase"> Contact</h5>
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+            Téléphone : <a href="tel:+32 4 84 39 69 57">+32 4 84 39 69 57</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 3</a>
-            </li>
-            <li>
-              <a href="#!" class="text-white">Link 4</a>
+              Email : <a href="mailto:Genzen@gmail.com">Genzen@gmail.com</a></li>
             </li>
           </ul>
         </div>
@@ -48,6 +42,7 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
+  
 
   <?php wp_footer();?>
 </body>
