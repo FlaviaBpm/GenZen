@@ -24,16 +24,23 @@
       <a class="navbar-brand" href="#"><img id="logo" src="<?php echo get_template_directory_uri();?>/assets/img/Logo.png" alt="le logo"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+
+
+        <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-<?php wp_nav_menu([
+    <?php wp_nav_menu([
                     'theme_location'=>'header',
                     'container' => false, 
                     'menu_class' => 'navbar-nav navbar-expand-lg'  
     ])?>
-            
+                <a href="http://localhost:8888/test-wordpress/connexion/" class="login-button">
+                <i class="bi bi-person-circle"></i></i>
+                </a>
+
+
+
         </div>
       </div>
     </nav>

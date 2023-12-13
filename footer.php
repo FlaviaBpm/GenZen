@@ -13,7 +13,7 @@
             'container' => false, 
             'menu_class' => 'list-unstyled mb-0'  
           ])?>
-          <ul class="">
+          <!-- <ul class="">
             <li>
               <a href="#!" class="text-white">Mentions Légales</a>
             </li>
@@ -23,13 +23,13 @@
             <li>
               <a href="#!" class="text-white">Politiques de confidentialités</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
 
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
           <h5 class="text-uppercase">Colonne 2</h5>
 
-          <ul class="list-unstyled mb-0">
+          <!-- <ul class="list-unstyled mb-0">
             <li>
               <a href="#!" class="text-white">Link 1</a>
             </li>
@@ -42,7 +42,7 @@
             <li>
               <a href="#!" class="text-white">Link 4</a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </section>

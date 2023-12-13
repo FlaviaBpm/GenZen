@@ -29,13 +29,14 @@
 
   if ($syndromes->have_posts()): // ici je vérifie que $syndromes posède bien mes posts
 ?>
-  <div class="row">
+
+  <div class="row" style="heigth:90%; width:90%;">
     <?php 
       while ($syndromes->have_posts()): // la je lance ma boucle sur mes posts contenu dans syndromes
       $syndromes->the_post(); // la récupère mon post
     ?>
       <div class="col-4">
-        <div class="card">
+        <div class="card" style="  border-radius: 5%;">
           <img 
             src="<?php the_post_thumbnail_url(); ?>" 
             class="card-img-top"
@@ -49,6 +50,7 @@
       </div>
     <?php endwhile; ?>
   </div>
+
 <?php else: ?>
   <h5>On a pas encore de services a vous proposer mais ça arrive !</h5>
 <?php endif; ?>

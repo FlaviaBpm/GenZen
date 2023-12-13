@@ -1,6 +1,7 @@
 <?php get_header(); ?>
    
-   
+
+
    <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -37,6 +38,8 @@
     <p>Nous sommes désolés, mais la page que vous recherchez semble introuvable.</p>
     <p>Il est important de prendre soin de votre santé mentale. <br> Si vous avez besoin d'aide, n'hésitez pas à contacter <a href="https://www.exemple-aide-sante-mentale.com" target="_blank">notre service d'assistance</a>.</p>
     <img src="lien-vers-votre-image.jpg" alt="Image illustrative">
+
+
 
 
 <?php get_footer(); ?>
