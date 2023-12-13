@@ -7,16 +7,17 @@
   <title>GenZen</title>
 
               <!-- Font popin -->
-              <link rel="preconnect" href="https://fonts.googleapis.com">
+               <link rel="preconnect" href="https://fonts.googleapis.com">
               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-
+              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
+ 
               <!-- font Cooper -->
-              <link rel="stylesheet" href="https://use.typekit.net/jtd0nll.css">
+              <!-- <link rel="stylesheet" href="https://use.typekit.net/jtd0nll.css"> -->
 
   <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
+<body
+<?php body_class(); ?>>
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">

@@ -15,7 +15,7 @@
                       <div class="col order-first">
                         <div class="card-accueil">
                             <div class="card-body-1">
-                              <h1 class="card-title">Cultivez votre sérinité mental</h1>
+                              <h1 class="card-title">Cultivez votre sérénité mental</h1>
 <br>
                               <h5 class="card2-title" style="color:#F4B425"> Comme les fleurs, donnez-vous le temps de  grandir et de vous épanouir</h5>
 <br>
@@ -60,7 +60,7 @@
                     <section class="page-section" id="services">
                           <div class="container">
                               <div class="text-center">
-                                  <h1 class="section-heading" style="font-family: cooper-black-std;">Notre Mission</h1>
+                                  <h1 class="section-heading">Notre Mission</h1>
                               </div>
                               <br><br><br>
 
