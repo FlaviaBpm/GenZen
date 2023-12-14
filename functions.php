@@ -14,7 +14,7 @@ function wpbootstrap_styles_scripts(){
 }
 add_action('wp_enqueue_scripts', 'wpbootstrap_styles_scripts'); // function qui va nous permettre de charger des function (perso ou autre a la chaine)
 
-/*syndrome poste*/
+/*syndromes poste*/
 function create_post_type() {	 // function dans la quel j'ajouterais tous mes type de contenu
 	register_post_type('syndromes'/* le nom de mon type de contenu */, [ // tableau avec mes options 
 		'labels' => [ // ça sera le nom afficher dans mon menu word press avec la traduction
@@ -31,6 +31,22 @@ function create_post_type() {	 // function dans la quel j'ajouterais tous mes ty
 }
 add_action('init', 'create_post_type');
 
+
+/* articles poste*/
+register_post_type('Articles'/* le nom de mon type de contenu */, [ // tableau avec mes options 
+  'labels' => [ // ça sera le nom afficher dans mon menu word press avec la traduction
+    'name' => __('Articles'), // __() permet a wordpress que c'est contenu de traduction
+    'singular_name' => __('Articles')
+  ],
+  'supports' => ['title', 'editor', 'thumbnail'], // on precise que notre post_type support title(un titre), editor(l'éditeur de contenu) et thumbnail(une photo a la une)
+  'public' => true, // c'est un post_type publique
+  'show_in_rest' => true,
+  'has_archive' => false, // en cas de suppression on peut retrouver notre post disparu
+  'rewrite' => ['slug' => 'Articles'], // j'applique une réécriture d'url "services" au lieu de "slug"
+  'menu_icon' => 'dashicons-clipboard' // je lui précise une icon dans la bar d'outil de l'admin wordpress
+]);
+
+
 /*
 add_filter( 'body_class', 'custom_class' );
 function custom_class( $classes ) {
@@ -40,6 +56,7 @@ function custom_class( $classes ) {
     return $classes;
 }
 */
+
 
 
 /**gerer menu */
