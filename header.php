@@ -36,11 +36,7 @@
                     'container' => false, 
                     'menu_class' => 'navbar-nav navbar-expand-lg'  
     ])?>
-                <a href="http://localhost:8888/test-wordpress/connexion/" class="login-button">
-                <i class="bi bi-person-circle"></i></i>
-                </a>
-
-
+    
 
         </div>
       </div>

@@ -42,7 +42,6 @@ function custom_class( $classes ) {
 */
 
 
-
 /**gerer menu */
 
 register_nav_menu('footer','Menu du footer');
@@ -61,3 +60,5 @@ function monthem_menu_link_class($attrs){
 
 add_filter('nav_menu_css_class','monthem_menu_class');
 add_filter('nav_menu_link_attributes','monthem_menu_link_class');
+
+?>

@@ -35,7 +35,21 @@ padding-bottom: 15%;
 }
 
 
-/* connexion*/
+/* connexion-inscription*/
+
+
+#prenom{
+  background-color: #EBE8ED;
+
+}
+
+#nom{
+  background-color: #EBE8ED;
+  border-radius: 30px;
+  width: 75%;
+
+}
+
 #email{
   background-color: #EBE8ED;
   border-radius: 30px;
@@ -48,7 +62,7 @@ padding-bottom: 15%;
   width: 75%;
 }
 
-.login-container {
+.login-container{
   width: 390px;
   padding: 30px;
   background-color: #fff;
