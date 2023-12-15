@@ -4,9 +4,8 @@ if (have_posts()):
 while (have_posts()): the_post();
 ?>
 
-  <div class="container-synd">
+  <div class="container-article">
     <article><?php the_content(); ?></article>
-    <p>ici c'est les articles</p>
   </div>
 
 <?php endwhile; else: ?>

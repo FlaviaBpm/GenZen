@@ -125,6 +125,7 @@ h2 {
 .card-body-1{
   padding-top: 20%;
   padding-right: 5%;
+  margin-right: 10%;
 }
 
 .card-text{
@@ -132,10 +133,10 @@ h2 {
 
 }
 
-.image-acceuil{
-  padding-top: 10%;
-  padding-left: 25%;
+.accueil-fond{
+justify-content: space-between; 
 }
+
 
 .btn-primary {
   --bs-btn-color: #fff;

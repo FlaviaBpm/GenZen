@@ -1,4 +1,4 @@
-<link href="<?php echo get_template_directory_uri();?>/page.css" rel="stylesheet"/>
+ <link href="<?php echo get_template_directory_uri();?>/page.css" rel="stylesheet"/>
 
 
     <div class="login-container">

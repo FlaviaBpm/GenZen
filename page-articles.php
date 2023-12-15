@@ -20,17 +20,21 @@
       while ($articles->have_posts()): // la je lance ma boucle sur mes posts contenu dans syndromes
       $articles->the_post(); // la récupère mon post
     ?>
-      <div class="col-4">
-        <div class="card">
-          <img 
-            src="<?php the_post_thumbnail_url(); ?>" 
-            class="card-img-top"
-            alt="<?php the_title() ?> | articles | <?php echo bloginfo('name'); ?>"
-          >
-          <div class="card-body">
-            <h3 class="card-title"><?php the_title(); ?></h3>  <!--j'intègre mon titre de service-->
-            <a href="<?php the_permalink(); ?>" class="btn btn-info">En savoir +</a>
-          </div>
+
+
+<h3 class="card-title"><?php the_title(); ?></h3>  <!--j'intègre mon titre de service-->
+
+<img src="<?php the_post_thumbnail_url(); ?>" class="rounded float-start" 
+alt="" a href="<?php the_permalink(); ?>">
+
+
+
+<div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+  </div>
+</div>
+
         </div>
       </div>
     <?php endwhile; ?>
