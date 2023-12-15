@@ -37,12 +37,17 @@
               Email : <a href="mailto:Genzen@gmail.com">Genzen@gmail.com</a></li>
             </li>
           </ul>
-        </div>
+        <div class="custom-search">
+  <input type="text" class="custom-search-input" placeholder="adresse email">
+  <button class="custom-search-botton" type="submit">envoyer</button>  
+</div>
+</div>
       </div>
     </section>
   </div>
 </div>
 </div>
+
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
