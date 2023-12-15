@@ -32,5 +32,5 @@
             </div>
             <button type="submit" class="login-btn">S'inscrire</button>
         </form>
-        <p>Vous avez déja un compte ? <a href="http://localhost:8888/test-wordpress/connexion/">Connectez vous !</a></p>
+        <p>Vous avez déja un compte ? <a href="http://localhost/GenZen/connexion/">Connectez vous !</a></p>
     </div>

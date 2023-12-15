@@ -18,5 +18,5 @@
             </div>
             <button type="submit" class="login-btn">Se connecter</button>
         </form>
-        <p>Vous n'avez pas de compte ? <a href="http://localhost:8888/test-wordpress/inscription/">Inscrivez vous !</a></p>
+        <p>Vous n'avez pas de compte ? <a href="http://localhost/GenZen/inscription/">Inscrivez vous !</a></p>
     </div>

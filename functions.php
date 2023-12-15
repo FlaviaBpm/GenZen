@@ -47,6 +47,21 @@ register_post_type('Articles'/* le nom de mon type de contenu */, [ // tableau a
   'menu_icon' => 'dashicons-clipboard' // je lui précise une icon dans la bar d'outil de l'admin wordpress
 ]);
 
+/* questions quiz*/
+
+function create_quiz_questions_post_type() {
+  register_post_type('questions', array(
+    'labels' => array(
+      'name' => __('Questions'),
+      'singular_name' => __('Question'),
+    ),
+    'public' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor'),
+  ));
+}
+add_action('init', 'create_quiz_questions_post_type');
+
 
 /*
 add_filter( 'body_class', 'custom_class' );

@@ -8,92 +8,92 @@ const els = {
     answersContainer: null
 };
 
-let questionIndex = 0;
+// let questionIndex = 0;
 
-const questions = [{
-         question: '1. Avez-vous tendance à procrastiner ? (Tout laisser à la dernière minute)',
-         answers: [{
-           title: 'Jamais',
-            diag: 'Anxiéte',
-        }, {
-           title: 'Rarement',
-           diag: 'Anxiéte',
-        }, {
-           title: 'Souvent',
-           diag: 'TDA/H',
-        }, {
-           title: 'Tout le temps',
-           diag: 'TDA/H',
-        }]
-},    
-   {
-    question: '2. Êtes-vous l\' inquiet à propos de beaucoup de choses à la fois ?',
-    answers: [{
-      title: 'Jamais',
-       diag: 'TDA/H',
-   }, {
-      title: 'Rarement',
-      diag: 'TDA/H',
-   }, {
-      title: 'Souvent',
-      diag: 'Anxiéte',
-   },{
-      title: 'Tout le temps',
-      diag: "d'anxiéte",
-   }]
-   },
+// const questions = [{
+//          question: '1. Avez-vous tendance à procrastiner ? (Tout laisser à la dernière minute)',
+//          answers: [{
+//            title: 'Jamais',
+//             diag: 'Anxiéte',
+//         }, {
+//            title: 'Rarement',
+//            diag: 'Anxiéte',
+//         }, {
+//            title: 'Souvent',
+//            diag: 'TDA/H',
+//         }, {
+//            title: 'Tout le temps',
+//            diag: 'TDA/H',
+//         }]
+// },    
+//    {
+//     question: '2. Êtes-vous l\' inquiet à propos de beaucoup de choses à la fois ?',
+//     answers: [{
+//       title: 'Jamais',
+//        diag: 'TDA/H',
+//    }, {
+//       title: 'Rarement',
+//       diag: 'TDA/H',
+//    }, {
+//       title: 'Souvent',
+//       diag: 'Anxiéte',
+//    },{
+//       title: 'Tout le temps',
+//       diag: "d'anxiéte",
+//    }]
+//    },
    
-   {
-    question: '3. Avez-vous toujours eu, depuis votre plus jeune âge et actuellement, des difficultés avec les interactions sociales, par exemple des difficultés à vous intégrer, des difficultés à maintenir le contact visuel, des incertitudes sur la manière d initier des interactions ?',
-    answers: [{
-      title: 'Jamais',
-       diag: 'de rien!',
-   }, {
-      title: 'Rarement',
-      diag: 'de rien!',
-   }, {
-      title: 'Souvent',
-      diag: 'Autisme',
-   },{
-      title: 'Tout le temps',
-      diag: 'Autisme',
-   }]
-   },
-    {
+//    {
+//     question: '3. Avez-vous toujours eu, depuis votre plus jeune âge et actuellement, des difficultés avec les interactions sociales, par exemple des difficultés à vous intégrer, des difficultés à maintenir le contact visuel, des incertitudes sur la manière d initier des interactions ?',
+//     answers: [{
+//       title: 'Jamais',
+//        diag: 'de rien!',
+//    }, {
+//       title: 'Rarement',
+//       diag: 'de rien!',
+//    }, {
+//       title: 'Souvent',
+//       diag: 'Autisme',
+//    },{
+//       title: 'Tout le temps',
+//       diag: 'Autisme',
+//    }]
+//    },
+//     {
       
-    question: '4. Avez-vous du mal à contrôler quand et en quelle quantité vous mangez ?',
-    answers: [{
-      title: 'Jamais',
-       diag: 'de rien!',
-   }, {
-      title: 'Rarement',
-      diag: 'de rien!',
-   }, {
-      title: 'Souvent',
-      diag: 'Trouble de l alimentation',
-   },{
-      title: 'Tout le temps',
-      diag: 'Trouble de l alimentation',
-   }]
-   },
-   {
-    question: '5. Vous arrive-t-il de vous sentir mal dans votre peau, d avoir l impression d avoir échoué ou d avoir déçu votre famille ?',
-    answers: [{
-      title: 'Jamais',
-       diag: 'de rien!',
-   }, {
-      title: 'Rarement',
-      diag: 'de rien!',
-   }, {
-      title: 'Souvent',
-      diag: 'Depression',
-   },{
-      title: 'Tout le temps',
-      diag: 'Depression',
-   }]
-   },
+//     question: '4. Avez-vous du mal à contrôler quand et en quelle quantité vous mangez ?',
+//     answers: [{
+//       title: 'Jamais',
+//        diag: 'de rien!',
+//    }, {
+//       title: 'Rarement',
+//       diag: 'de rien!',
+//    }, {
+//       title: 'Souvent',
+//       diag: 'Trouble de l alimentation',
+//    },{
+//       title: 'Tout le temps',
+//       diag: 'Trouble de l alimentation',
+//    }]
+//    },
+//    {
+//     question: '5. Vous arrive-t-il de vous sentir mal dans votre peau, d avoir l impression d avoir échoué ou d avoir déçu votre famille ?',
+//     answers: [{
+//       title: 'Jamais',
+//        diag: 'de rien!',
+//    }, {
+//       title: 'Rarement',
+//       diag: 'de rien!',
+//    }, {
+//       title: 'Souvent',
+//       diag: 'Depression',
+//    },{
+//       title: 'Tout le temps',
+//       diag: 'Depression',
+//    }]
+//    },
    
-];
+// ];
 
 const recordedAnswers = [];
 

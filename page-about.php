@@ -25,7 +25,7 @@
                               </h7>
 
                               <br><br>
-                              <a href="#" class="btn btn-primary">Démarrer le test</a>
+                              <a href="http://localhost/GenZen/quiz/" class="btn btn-primary"> Démarrer le test</a>
 
                             </div>
                           </div>
@@ -38,7 +38,7 @@
     <div class="row justify-content-between bg-white" style="height:730px;">
       <div class="col-4">
         <br><br>
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/Who.png" alt="" style="height:76%">
+        <img src="<?php echo get_template_directory_uri();?>/assets/img/Who.png" alt="">
       </div>
         <div class="col-4">
           <br><br><br><br><br><br><br><br><br>
