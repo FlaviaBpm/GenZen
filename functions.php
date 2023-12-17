@@ -47,17 +47,13 @@ register_post_type('Articles'/* le nom de mon type de contenu */, [ // tableau a
 ]);
 
 
+/* Connexion */
 
 
-/*
-add_filter( 'body_class', 'custom_class' );
-function custom_class( $classes ) {
-    if ( is_page_template( 'page-symptomes.php' ) ) {
-        $classes[] = 'bg-synd';
-    }
-    return $classes;
-}
-*/
+
+
+
+/* Inscription */
 
 
 
@@ -81,3 +77,5 @@ add_filter('nav_menu_css_class','monthem_menu_class');
 add_filter('nav_menu_link_attributes','monthem_menu_link_class');
 
 ?>
+
+

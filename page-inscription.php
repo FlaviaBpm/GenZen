@@ -1,7 +1,11 @@
  <link href="<?php echo get_template_directory_uri();?>/page.css" rel="stylesheet"/>
 
 
-    <div class="login-container">
+ <?php echo do_shortcode('[ultimatemember form_id="229"]'); ?>
+
+
+
+    <!-- <div class="login-container">
         <h1>Inscription</h1>
         <form action="#">
 
@@ -33,4 +37,4 @@
             <button type="submit" class="login-btn">S'inscrire</button>
         </form>
         <p>Vous avez déja un compte ? <a href="http://localhost:8888/test-wordpress/connexion/">Connectez vous !</a></p>
-    </div>
+    </div> -->
