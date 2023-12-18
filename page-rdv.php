@@ -39,18 +39,3 @@ No doctors available...
 endif;
 ?>
 
-<?php if (have_posts()):
-                while (have_posts()): the_post();
-              ?>
-
-  <div class="rdv">
-    <article><?php the_content(); ?></article>
-  </div>
-
-<?php endwhile; else: ?>
-
-No doctors available...
-
-<?php 
-endif;
-?>
