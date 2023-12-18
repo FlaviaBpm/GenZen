@@ -1,17 +1,56 @@
-<?php get_header(); ?>
+<?php /* Template Name: rdv Template */ ?>
 
-<!-- Side navigation -->
-<div class="sidenav">
+<?php  ?>
+
+
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">Profil</a>
   <a href="#">Resultats</a>
   <a href="#">Rendez-vous</a>
   <a href="#">Actualités</a>
 </div>
 
-<!-- Page content -->
-<div class="main">
-<img src="<?php echo get_template_directory_uri();?>/assets/img/dr deluca.jpg" width="150" height="140">
-<h2 class="drname"> Dr. Maria De Luca </h3>
-<h4 class="drjob"> Psychotherapeut</h3>
 
-</div>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<?php get_header();
+                if (have_posts()):
+                while (have_posts()): the_post();
+              ?>
+
+  <div class="rdv">
+    <article><?php the_content(); ?></article>
+  </div>
+
+<?php endwhile; else: ?>
+
+No doctors available...
+
+<?php 
+endif;
+?>
+
+<?php if (have_posts()):
+                while (have_posts()): the_post();
+              ?>
+
+  <div class="rdv">
+    <article><?php the_content(); ?></article>
+  </div>
+
+<?php endwhile; else: ?>
+
+No doctors available...
+
+<?php 
+endif;
+?>

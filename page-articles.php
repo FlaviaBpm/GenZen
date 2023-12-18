@@ -1,31 +1,38 @@
 
 <?php get_header(); ?>
 
+<div class="bg-synd">
+<div class="container-synd">
 
-<?php
-  $articles = new WP_Query([ // je crée une variable $syndromes
-    'post_type' => 'articles', // la je précise quel post_type je veux (dans mon cas "syndromes")
-    'post_status' => 'publish', // la je précise que je veux des posts qui sont publié
-    'limit' => 5, // dans mon cas je n'en ai besoin que de trois
-    'orderby' => 'date', // je les trie par date 
-    'date' => true // je récupéère ma date
-  ]);
+            <div class="text-synd">
+                <h1>Actualités sur la Santé </h1>
+                <br>
 
-  if ($articles->have_posts()): // ici je vérifie que $syndromes posède bien mes posts
+<h7>Explorez notre section dédiée au bien-être, couvrant des conseils essentiels pour naviguer à travers les transitions de la vie. Nourrissez votre esprit et votre corps avec des informations précieuses pour une vie épanouissante pendant cette période cruciale.
+</h7>
+  <br><br><br>
+  </div>
+
+  <?php 
+                get_header(); 
+                if (have_posts()):
+                while (have_posts()): the_post();
+              ?>
+                <div class="container-mission">
+    <article><?php the_content(); ?></article>
+  </div>
+  <?php endwhile; else: ?>
+
+Pas d'article de mission
+<?php 
+endif;
+get_footer(); 
 ?>
 
-  
-<?php else: ?>
-  <h5>On a pas encore de services a vous proposer mais ça arrive !</h5>
-<?php endif; ?>
-
-
-            <br><br><br>
+           
             <br><br><br>
             <br><br><br>
 
         
-            </div>
-            </div>
 
 <?php get_footer(); ?>
