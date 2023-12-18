@@ -41,14 +41,15 @@
 
                   
               <!--Mission & Qui sommes-nous -->
-
               <?php 
                 get_header(); 
                 if (have_posts()):
                 while (have_posts()): the_post();
+                
               ?>
 
   <div class="container-mission">
+
     <article><?php the_content(); ?></article>
   </div>
 

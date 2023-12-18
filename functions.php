@@ -5,6 +5,11 @@ add_theme_support('menus'); // support de mon title tag
 
 add_theme_support('post-thumbnails'); // support des images a la une
 
+
+
+
+
+
 // Chargement des styles et des scripts Bootstrap sur WordPress
 function wpbootstrap_styles_scripts(){
   wp_enqueue_style('style', get_stylesheet_uri());
@@ -13,6 +18,12 @@ function wpbootstrap_styles_scripts(){
     wp_enqueue_script('bootstrap-bundle', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js', false, 1, true);
 }
 add_action('wp_enqueue_scripts', 'wpbootstrap_styles_scripts'); // function qui va nous permettre de charger des function (perso ou autre a la chaine)
+
+
+
+
+
+
 
 /*syndromes poste*/
 function create_post_type() {	 // function dans la quel j'ajouterais tous mes type de contenu
@@ -30,6 +41,12 @@ function create_post_type() {	 // function dans la quel j'ajouterais tous mes ty
 	]);
 }
 add_action('init', 'create_post_type');
+
+
+
+
+
+
 
 
 /* articles poste*/
@@ -50,10 +67,57 @@ register_post_type('Articles'/* le nom de mon type de contenu */, [ // tableau a
 /* Connexion */
 
 
+// Personnalisation du formulaire d'inscription de WP-Members
+function personnaliser_formulaire_inscription_wp_members($fields) {
+  // Ajoutez ici des champs personnalisés si nécessaire
+  // Exemple : $fields['nouveau_champ'] = array('label' => 'Nouveau Champ', 'type' => 'text');
+
+  return $fields;
+}
+add_filter('wpmem_register_form_rows', 'personnaliser_formulaire_inscription_wp_members');
+
+// Personnalisation des messages d'erreur du formulaire d'inscription
+function personnaliser_messages_erreur_wp_members($fields) {
+  $fields['username']['error'] = 'Votre message d\'erreur personnalisé pour le nom d\'utilisateur';
+  $fields['password']['error'] = 'Votre message d\'erreur personnalisé pour le mot de passe';
+  // Ajoutez ici d'autres messages d'erreur personnalisés
+
+  return $fields;
+}
+add_filter('wpmem_register_errors', 'personnaliser_messages_erreur_wp_members');
 
 
 
-/* Inscription */
+
+
+// question quiz
+
+function create_quiz_question_post_type() {
+	register_post_type('quiz_question',
+		array(
+			'labels' => array(
+				'name' => __('Quiz Questions'),
+				'singular_name' => __('Quiz Question')
+			),
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array('title', 'editor')
+		)
+	);
+  }
+
+  add_action('init', 'create_quiz_question_post_type');
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -61,6 +125,8 @@ register_post_type('Articles'/* le nom de mon type de contenu */, [ // tableau a
 
 register_nav_menu('footer','Menu du footer');
 register_nav_menu('header','Menu header');
+register_nav_menu('dropdown','Menu dropdown');
+
 
 
 function monthem_menu_class($classes){
