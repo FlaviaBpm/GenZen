@@ -31,13 +31,35 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-    <?php wp_nav_menu([
+
+        <nav class="navbar navbar-expand-lg">
+    <?php
+    wp_nav_menu(array(
+        'theme_location' => 'header',
+        'container' => false,
+        'menu_class' => 'navbar-nav',
+    ));
+    ?>
+    <!-- Ajouter un élément de menu avec un dropdown -->
+    <div class="dropdown">
+  <button class="dropbtn"><i class="bi bi-caret-down-fill"></i></button>
+  <div class="dropdown-content">
+    <a href="#">Profil</a>
+    <a href="#">Résultats</a>
+    <a href="#">Rendez-vous</a>
+    <a href="#">Actualités</a>
+  </div>
+</div></nav>
+
+
+
+
+    <!-- <?php wp_nav_menu([
                     'theme_location'=>'header',
                     'container' => false, 
                     'menu_class' => 'navbar-nav navbar-expand-lg'  
-    ])?>
+    ])?> -->
     
-
 
 
 <!-- Déconnecter -->

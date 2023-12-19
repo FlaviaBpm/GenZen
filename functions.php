@@ -49,7 +49,22 @@ add_action('init', 'create_post_type');
 
 
 
-/* articles poste*/
+/* card mission */
+register_post_type('mission'/* le nom de mon type de contenu */, [ // tableau avec mes options 
+  'labels' => [ // ça sera le nom afficher dans mon menu word press avec la traduction
+    'name' => __('mission'), // __() permet a wordpress que c'est contenu de traduction
+    'singular_name' => __('mission')
+  ],
+  'supports' => ['title', 'editor', 'thumbnail'], // on precise que notre post_type support title(un titre), editor(l'éditeur de contenu) et thumbnail(une photo a la une)
+  'public' => true, // c'est un post_type publique
+  'show_in_rest' => true,
+  'has_archive' => false, // en cas de suppression on peut retrouver notre post disparu
+  'rewrite' => ['slug' => 'mission'], // j'applique une réécriture d'url "services" au lieu de "slug"
+  'menu_icon' => 'dashicons-clipboard' // je lui précise une icon dans la bar d'outil de l'admin wordpress
+]);
+
+
+/* article post */
 register_post_type('Articles'/* le nom de mon type de contenu */, [ // tableau avec mes options 
   'labels' => [ // ça sera le nom afficher dans mon menu word press avec la traduction
     'name' => __('Articles'), // __() permet a wordpress que c'est contenu de traduction
@@ -64,7 +79,34 @@ register_post_type('Articles'/* le nom de mon type de contenu */, [ // tableau a
 ]);
 
 
-/* Connexion */
+
+
+/*  rediriger apres Connexion */
+
+function redirect_after_login($redirect_to, $user) {
+  // Vérifier si l'utilisateur est connecté
+  if (is_user_logged_in()) {
+      // Rediriger vers la page de profil après la connexion
+      return home_url('/profil'); // Remplacez '/profil' par l'URL de votre page de profil
+  }
+  return $redirect_to;
+}
+add_filter('wpmem_login_redirect', 'redirect_after_login', 10, 2);
+
+
+
+/*  rediriger apres Inscription */
+
+function redirect_after_register($fields) {
+  // Rediriger vers la page de profil après l'inscription
+  return home_url('/profil'); // Remplacez '/profil' par l'URL de votre page de profil
+}
+add_filter('wpmem_register_redirect', 'redirect_after_register');
+
+
+
+
+
 
 
 // Personnalisation du formulaire d'inscription de WP-Members
@@ -85,6 +127,7 @@ function personnaliser_messages_erreur_wp_members($fields) {
   return $fields;
 }
 add_filter('wpmem_register_errors', 'personnaliser_messages_erreur_wp_members');
+
 
 
 

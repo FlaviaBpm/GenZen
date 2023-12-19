@@ -5,6 +5,8 @@
   <?php echo do_shortcode("  [wpmem_form register]"); ?>
 
 
+
+
  <!-- <div class="login-container">
        <h1>Inscription</h1>
        <form action="#">

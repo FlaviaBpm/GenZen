@@ -71,9 +71,15 @@ wp_reset_postdata();
             <h2><?php echo $questions[$questionIndex]['question']; ?></h2>
             <div class="reponse">
                 <ul>
+
+                
                     <?php foreach ($questions[$questionIndex]['answers'] as $answer) : ?>
                         <li data-diag="<?php echo $answer['diag']; ?>"><?php echo $answer['title']; ?></li>
                     <?php endforeach; ?>
+
+
+
+                    
                 </ul>
             </div>
         </div>
@@ -175,6 +181,10 @@ const displayScreen = (screenName) => {
 
 window.addEventListener('load', init);
 
-    </script>
+
+
+
+
+</script>
 </body>
 </html>

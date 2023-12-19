@@ -2,18 +2,18 @@
 <?php get_header(); ?>
 
 
-<div class="bg-synd">
-<div class="container-synd">
+<div class="bg-actu">
+<div class="container-actu">
 
-            <div class="text-synd">
+            <div class="text-actu">
                 <h1>Actualités sur la Santé </h1>
 
                 <br>
 
-                <h7>Explorez notre section dédiée au bien-être, couvrant des conseils essentiels pour naviguer à travers les transitions de la vie. Nourrissez votre esprit et votre corps avec des informations précieuses pour une vie épanouissante pendant cette période cruciale.
-                </h7>
+                <p>Explorez notre section dédiée au bien-être, couvrant des conseils essentiels pour naviguer à travers les transitions de la vie. Nourrissez votre esprit et votre corps avec des informations précieuses pour une vie épanouissante pendant cette période cruciale.
+</p>
 
-                <br><br><br><br><br>
+                
 
             </div>
 
@@ -26,7 +26,11 @@
               ?>
 
   <div class="container-mission">
-    <article><?php the_content(); ?></article>
+
+  
+    <article><?php the_content(); ?>
+</div>
+  </article>
   </div>
 
 <?php endwhile; else: ?>
