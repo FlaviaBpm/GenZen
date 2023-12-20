@@ -4,14 +4,6 @@
 <?php  get_header();?>
 
 
-<div id="mySidenavP" class="sidenavP">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Profil</a>
-  <a href="#">Resultats</a>
-  <a href="#">Rendez-vous</a>
-  <a href="#">Actualités</a>
-</div>
-
   <div class="profil">
 
   <div class="container">
