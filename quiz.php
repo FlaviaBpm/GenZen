@@ -60,7 +60,7 @@ wp_reset_postdata();
     <div class="question-screen">
         <div class="app"> 
                   <!-- Question number title -->
-        <h4>Question <?php echo $questionIndex +1;?>/<?php echo count($questions); ?></h4>
+        <h4>Question <span id='nbrslide'><?php echo $questionIndex +1;?></span>/<?php echo count($questions); ?></h4>
             <h2><?= htmlentities($questions[$questionIndex]['question']); ?></h2>
             <div class="reponse">
                 <ul>
@@ -87,13 +87,12 @@ wp_reset_postdata();
     <div class="end-screen">
   <h1>Merci d'avoir repondu a nos questions! <br> Pour découvrir vos résultats en détail , inscrivez-vous ici </h1>
   <h6 class="diag">Vos résultats suggèrent que <span> de TDA/H</span></h6>
-  <button id="resultats">Resultats</button>
+  <button id="resultats" >Resultats</button>
 
 
   
     <script>
         const questions = <?php echo json_encode($questions); ?>;
-        console.log({ questions })
         
 const els = {
     welcomeScreen: null,
@@ -158,7 +157,6 @@ const calculateScore = () => {
         return recordedAnswers.filter(answer => answer === a).length -
             recordedAnswers.filter(answer => answer === b).length;
     }).pop();
-    console.log('diag', diag);
 
     // You can customize the score calculation logic based on your requirements
     els.endScreen.querySelector('span').textContent = diag;
@@ -170,17 +168,21 @@ const displayQuestion = (index) => {
     const questionEl = els.questionScreen.querySelector('h2');
 
     const answerEls = currentQuestion.answers.map((answer) => {
-        console.log({answer})
+        
         const liEl = document.createElement('li');
         liEl.textContent = answer.title;
         liEl.setAttribute('data-diag', answer.diag);
         return liEl;
-    });
+});
 
+console.log({questionEl,currentQuestion,displayQuestion})
+console.log({q:currentQuestion.question})
     questionEl.innerHTML = currentQuestion.question;
     els.answersContainer.textContent = '';
     els.answersContainer.append(...answerEls);
 
+const nbrslide=document.getElementById('nbrslide');
+nbrslide.innerHTML=index +1;
 
 const progressPercentage = ((index + 1) / questions.length) * 100;
 els.progressBar.style.width = progressPercentage + '%';

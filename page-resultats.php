@@ -5,8 +5,6 @@ get_header();?>
 
 <div class="pgresults">
     <h1 class="rtitle">Résultats</h1>
-    <div class="chart-container">
-        <canvas id="quizChart"></canvas>
     </div>
 
     <h5 class="res">Vos résultats suggèrent que vous souffrez d'un TDA/TDAH.</h5> 
