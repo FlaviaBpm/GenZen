@@ -42,13 +42,15 @@ wp_reset_postdata();
 <html>
 <head>
    <title> Quiz GenZen</title>
+    <div id="quiz-container">
 
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/quiz.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>\quiz.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <lik href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    <div id="quiz-container">
-        <!-- Your existing HTML content here -->
+    <!-- Your existing HTML content here -->
     <div class="welcome-screen">
     <h1>Bienvenue au quiz de GenZen</h1>
     <h3>Evaluez votre état de santé mentale avec notre quiz crée par et pour les jeunes ! </h3>
@@ -67,21 +69,29 @@ wp_reset_postdata();
                         <li data-diag="<?php echo $answer['diag']; ?>"><?php echo $answer['title']; ?></li>
                     <?php endforeach; ?>
                 </ul>
+                
+<button id="previous"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/>
+  <path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/>
+</svg></button>
+
             </div>
             <div class="progress-bar">
     <div class="progress" style="width: 0%;"></div>
             </div>
             </div>
             </div>
-
+            </div>
     
 
     <!-- Your existing HTML content here -->
     <div class="end-screen">
   <h1>Merci d'avoir repondu a nos questions! <br> Pour découvrir vos résultats en détail , inscrivez-vous ici </h1>
-  <h6 class="diag">Vos résultats suggèrent que vous <span> avez possiblement un TDA/TDAH</span></h6>
+  <h6 class="diag">Les résultats indiquent la possibilité d'un diagnostic<span> de TDA/H</span></h6>
   <button id="resultats">Resultats</button>
 
+<!-- Add this canvas element where you want the chart to be displayed -->
+<canvas id="resultChart"></canvas>
 
   
     <script>
@@ -116,7 +126,7 @@ const init = () => {
 
     els.welcomeBtn.addEventListener('click', () => {
         displayQuestion(questionIndex);
-        displayScreen('question');  
+        displayScreen('question');
         
     });
 
@@ -136,8 +146,22 @@ const init = () => {
             displayQuestion(questionIndex);
         }
     });
+    const previousBtn = document.getElementById('previous');
+    previousBtn.addEventListener('click', () => {
+        if (questionIndex > 0) {
+            questionIndex--;
+            displayQuestion(questionIndex);
+        }
+    });
 
-}
+    els.endBtn.addEventListener('click', () => {
+            const recordedAnswersParam = recordedAnswers.join(',');
+            // window.location.href = `/results/?answers=${recordedAnswersParam}`;
+            
+            // Display chart instead of redirecting
+            displayResultChart(recordedAnswers);
+        });
+};
 
 const calculateScore = () => {
     const diag = recordedAnswers.sort((a, b) => {
@@ -172,6 +196,48 @@ const progressPercentage = ((index + 1) / questions.length) * 100;
 els.progressBar.style.width = progressPercentage + '%';
 };
 
+const displayResultChart = (recordedAnswers) => {
+    const canvas = document.getElementById('resultChart');
+    const ctx = document.getElementById('resultChart').getContext('2d');
+
+        // Count occurrences of each diagnosis
+        const diagCount = recordedAnswers.reduce((acc, diag) => {
+            acc[diag] = (acc[diag] || 0) + 1;
+            return acc;
+        }, {});
+
+        const diagLabels = Object.keys(diagCount);
+        const diagData = Object.values(diagCount);
+
+        // Create a bar chart
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: diagLabels,
+                datasets: [{
+                    label: 'Resultats du quiz',
+                    data: diagData,
+                    backgroundColor: '#CF1679',
+                    borderColor: '#ccc',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Set to false to allow customization of size
+    
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        displayScreen('end');
+    };
+
+
 const displayScreen = (screenName) => {
     els.welcomeScreen.style.display = 'none';
     els.questionScreen.style.display = 'none';
@@ -182,7 +248,6 @@ const displayScreen = (screenName) => {
 };
 
 window.addEventListener('load', init);
-
 
     </script>
 </body>

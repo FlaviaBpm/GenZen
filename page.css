@@ -453,7 +453,7 @@ h3{
   background: #fff;
   border: #CF1679 4px solid;
   width: 70%;
-  height: 1300px;
+  min-height: 2000px;
   border-radius: 35px;
   padding: 30px;
   margin: auto;
