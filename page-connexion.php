@@ -1,28 +1,26 @@
- <link href="<?php echo get_template_directory_uri();?>/page.css" rel="stylesheet"/>
 
 
+<link href="<?php echo get_template_directory_uri();?>/page.css" rel="stylesheet"/>
 
- <?php echo do_shortcode("[wpmem_form login]"); ?>
+<?php get_header(); ?>
 
 
-  <!-- <div class="login-container">
-    
-    <button type="button" class="btn-close" aria-label="Close"></button>
-        <h1>Connexion</h1>
-        <form action="#">
-            <div class="input-field">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-field">
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="checkbox">
-                <input type="checkbox" id="remember-me" name="remember-me">
-                <label for="remember-me">Se souvenir de moi</label>
-            </div>
-            <button type="submit" class="login-btn">Se connecter</button>
-        </form>
-        <p>Vous n'avez pas de compte ? <a href="http://localhost:8888/test-wordpress/inscription/">Inscrivez vous !</a></p>
-    </div>    -->
+<?php echo do_shortcode("[wpmem_form login]");  ?>
+
+
+<div class="login_status_1">
+
+<i class="bi bi-person-check enlarged-icon"></i>
+<br><br>
+
+Ravi de vous retrouver parmi nous. Vous êtes déjà connecté et prêt à explorer toutes 
+les merveilles que GenZen à offrir. Bonne découverte ! 
+<br><br>
+
+<a href="/test-wordpress/connexion/?a=logout" style="color: #CF1679;
+">Se déconnecter</a>
+</div>
+
+
+<?php get_footer(); ?>
+

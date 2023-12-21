@@ -1,3 +1,168 @@
+/* header */
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #474747;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+
+/*footer*/
+li{
+  margin: 10px ;
+  padding: 4px 6px;
+  color: #fff; /* Change to your desired color */
+  text-decoration: none;
+}
+.col-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.col-contact{
+  padding-left: 25px;
+}
+
+.text-footer{
+ font-weight: 800;
+ margin: 15px;
+}
+.custom-search {
+  position: relative;
+  width: 300px;
+  
+}
+.custom-search-input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px; 
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+}
+.custom-search-botton {
+  position: absolute;
+  right: 3px; 
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: #CDB4DB;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 100px;
+  z-index: 2;
+}
+.nav-link{
+  color: #fff;
+  padding: 8px 0 ;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 6px ;
+}
+
+
+/* mission */
+
+img.card-img-top{
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  height: 50%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.my-5{
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+/* popup */
+div.modal-header{
+  display: none;
+  padding-top: 10%;
+}
+
+div.modal-header{
+  padding-top: 10%;
+}
+
+div.modal-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+  border-top: 1px solid #dee2e6;
+  border-bottom-right-radius: calc(0.3rem - 1px);
+  border-bottom-left-radius: calc(0.3rem - 1px);
+}
+
+div.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none ;
+  border-radius: 2rem;
+}
+div.modal-dialog {
+  margin-top: 5%;
+}
+
+.modal-body{
+  padding-top: 10%;
+
+}
+
+/* déja connecter */
+
+.login_status {
+  display: none;
+}
+
+
+.enlarged-icon {
+  font-size: 70px;
+  color: #CF1679;
+  text-align: center;
+}
+
+.login_status_1{
+  text-align: center;
+  width: 390px;
+  padding: 30px;
+  background-color: #fff;
+  margin: 100px auto;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+  border-radius: 30px;
+border: #474747 2px;
+}
+
+
+/* menu burger lateral */
+
+
+
 /* changer mot de passe */
 input#pass1.password , input#pass2.password {
   margin-bottom: 10%;
@@ -243,6 +408,9 @@ h2 {
 
 /* a propos*/
 
+.card2-title{
+  padding-bottom: 2%;
+}
 
 
 .card-body-1{
@@ -293,16 +461,63 @@ h7{
 
 
 /*Qui sommes-nous*/
+
+.col-md-8{
+  text-align: center;
+  padding-top: 8%;
+}
+
+.img-fluid{
+  padding-top: 13%;
+}
+
 .container-who{
   background-color:white;
   height: 15%;
   padding-right: 5%;
   padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
 }
 
 
 /* actualités */
+
+
+.postid-600, .postid-592, .postid-599, .postid-597, .postid-598{
+  background-color: #FFF;
+}
+
+.autisme-card {
+  border: 2px solid #8EDD93; 
+  border-radius: 2rem;
+  padding : 10px; 
+  margin-top : 5%;
+
+}
+
+.anx-card{
+  border: 2px solid #E95B96; 
+  border-radius: 2rem;
+  padding : 10px; 
+  margin-top : 5%;
+}
+
+.wp-block-button__link{
+  background-color: #E95B96;
+}
+
+
+.actus-1{
+  padding-top: 5%;
+  padding-bottom: 3%;
+  padding-left: 10% ;
+  padding-right: 10%;
+}
+
 .container-actu{
+  padding-top: 5%;
   padding-left: 7%;
   padding-bottom: 5%;
   padding-right: 5%;
@@ -318,6 +533,47 @@ h7{
 
 
 /* syndrome*/
+
+.wp-block-embed__wrapper{
+ text-align: center;
+ padding-top: 3%;
+}
+
+.wp-element-caption{
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.anxiete{
+  padding-bottom: 3%;
+  padding-left: 6% ;
+  padding-right: 6%;
+}
+
+.depression{
+  padding-bottom: 3%;
+  padding-left: 6% ;
+  padding-right: 6%;
+}
+
+.tdah{
+    padding-bottom: 3%;
+    padding-left: 6% ;
+    padding-right: 6%;
+}
+
+.TCA{
+  padding-bottom: 3%;
+  padding-left: 6% ;
+  padding-right: 6%;
+}
+
+.autisme{
+  padding-bottom: 3%;
+  padding-left: 6% ;
+  padding-right: 6%;
+}
+
 .container-synd{
   padding-left: 5%;
   padding-right: 5%;
@@ -358,6 +614,9 @@ text-align: center ;
 
 .text-synd{
   text-align: center;
+  padding-bottom: 3%;
+  padding-left: 6% ;
+  padding-right: 6%;
 }
 
 .page-id-185{
@@ -420,7 +679,7 @@ ul#menu-header a {
 }
 
 .accueil-fond{
-padding-top: 5%;
+padding-top: 1%;
 padding-bottom: 5%;
 }
 
@@ -607,6 +866,7 @@ text-align: center ;
 
 .text-synd{
   text-align: center;
+
 }
 
 .page-id-185{
@@ -680,47 +940,6 @@ padding-right: 150px; */
 }
 
 
-.sidenav {
-  font-family: 'Poppins';
-  width: 240px;
-  position: fixed;
-  z-index: 1;
-  top: 170px;
-  left: 25px;
-  overflow-x: hidden;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 21px 13px 9px 45px;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 650;
-  color: #474747;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #8EDD93;
-}
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-* {
-	box-sizing: border-box;
-}
-
-
-
 .datetimepicker {
 	display: inline-flex;
 	align-items: center;
@@ -768,6 +987,63 @@ padding-right: 150px; */
   justify-content: center;
 }
 
+/* page results */
+
+.pgresults {
+  font-family: 'Poppins';
+  background: #fff;
+  border: #CF1679 4px solid;
+  width: 70%;
+  min-height: 2000px;
+  border-radius: 35px;
+  padding: 30px;
+  margin: auto;
+}
+.body-card{
+  text-align: left;
+}
+.card-img-top{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.rtitle{
+  color:#CF1679;
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.res{
+  font-size: 14px;
+  font-weight: 550;
+}
+.pgresults a{
+  color: #F4B425;
+}
+.pgresults p {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.title-res {
+  color: #CF1679;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.pgresults .card{
+  max-height:200px
+}
+
+.pgresults .row{
+  align-items: center;
+}
+.btn-secondary{
+  border:none;
+  border-radius: 12px;
+}
+.containerr{
+  padding: 0;
+}
 /*page profil*/
 
 .profil{

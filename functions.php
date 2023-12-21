@@ -64,17 +64,17 @@ register_post_type('mission'/* le nom de mon type de contenu */, [ // tableau av
 ]);
 
 
-/* article post */
-register_post_type('Articles'/* le nom de mon type de contenu */, [ // tableau avec mes options 
+/* actus post */
+register_post_type('actus'/* le nom de mon type de contenu */, [ // tableau avec mes options 
   'labels' => [ // ça sera le nom afficher dans mon menu word press avec la traduction
-    'name' => __('Articles'), // __() permet a wordpress que c'est contenu de traduction
-    'singular_name' => __('Articles')
+    'name' => __('actus'), // __() permet a wordpress que c'est contenu de traduction
+    'singular_name' => __('actus')
   ],
   'supports' => ['title', 'editor', 'thumbnail'], // on precise que notre post_type support title(un titre), editor(l'éditeur de contenu) et thumbnail(une photo a la une)
   'public' => true, // c'est un post_type publique
   'show_in_rest' => true,
   'has_archive' => false, // en cas de suppression on peut retrouver notre post disparu
-  'rewrite' => ['slug' => 'Articles'], // j'applique une réécriture d'url "services" au lieu de "slug"
+  'rewrite' => ['slug' => 'actus'], // j'applique une réécriture d'url "services" au lieu de "slug"
   'menu_icon' => 'dashicons-clipboard' // je lui précise une icon dans la bar d'outil de l'admin wordpress
 ]);
 

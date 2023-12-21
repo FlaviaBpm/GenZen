@@ -1,19 +1,6 @@
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GenZen</title>
+<?php  get_header();?>
 
-              <!-- Font popin -->
-               <link rel="preconnect" href="https://fonts.googleapis.com">
-              <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
- 
-              <!-- font Cooper -->
-              <!-- <link rel="stylesheet" href="https://use.typekit.net/jtd0nll.css"> -->
 
   <?php wp_head(); ?>
 </head>
@@ -26,13 +13,6 @@
 
 
 
-<div id="mySidenavP" class="sidenavP">
-<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Profil</a>
-  <a href="#">Resultats</a>
-  <a href="#">Rendez-vous</a>
-  <a href="#">Actualités</a>
-</div>
 
   <div class="profil">
 

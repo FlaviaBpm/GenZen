@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<div class="sticky"> Découvre ton bien-être mental avec notre quiz<a href="http://localhost:8888/test-wordpress/quiz/">ici</a>!</div>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +18,13 @@
               <!-- <link rel="stylesheet" href="https://use.typekit.net/jtd0nll.css"> -->
 
   <?php wp_head(); ?>
+  
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+
 </head>
 <body
 <?php body_class(); ?>>
@@ -22,7 +32,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
 
-      <a class="navbar-brand" href="#"><img id="logo" src="<?php echo get_template_directory_uri();?>/assets/img/Logo.png" alt="le logo"></a>
+      <a class="navbar-brand" href="http://localhost:8888/test-wordpress/"><img id="logo" src="<?php echo get_template_directory_uri();?>/assets/img/Logo.png" alt="le logo"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -44,10 +54,9 @@
     <div class="dropdown">
   <button class="dropbtn"><i class="bi bi-caret-down-fill"></i></button>
   <div class="dropdown-content">
-    <a href="#">Profil</a>
-    <a href="#">Résultats</a>
-    <a href="#">Rendez-vous</a>
-    <a href="#">Actualités</a>
+    <a href="http://localhost:8888/test-wordpress/profil/">Profil</a>
+    <a href="http://localhost:8888/test-wordpress/resultats/">Résultats</a>
+    <a href="http://localhost:8888/test-wordpress/rdv/">Rendez-vous</a>
   </div>
 </div></nav>
 
@@ -72,3 +81,4 @@
       </div>
     </nav>
   </header>
+
