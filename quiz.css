@@ -1,3 +1,25 @@
+
+
+@media only screen and (max-width: 600px) {
+    /* Adjust font size for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Adjust spacing for smaller screens */
+    .welcome-screen,
+    .question-screen,
+    .end-screen {
+        padding: 20px;
+    }
+
+    .app {
+        padding: 20px;
+    }
+
+    /* Additional responsive styles as needed */
+}
+
 .welcome-screen,
 .question-screen,
 .end-screen {
@@ -32,12 +54,12 @@
     align-items: center;
     text-align: center;
 }
-/* .end-screen  {
-    background-image: url(assets/img/bgconnex.png);
+.end-screen  {
+    background-image: url(assets/img/bgquiz.png);
     background-size: cover;
     background-position-x: center;
 
-} */
+}
 
 .question-screen,
 .end-screen {
@@ -64,6 +86,12 @@ body {
     justify-content: center;
     margin: auto; 
   
+}
+@media only screen and (max-width: 600px) {
+    .app {
+        width: 95%; /* Take the full width of the screen */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
 }
 .app h2{
     font-weight:650 ;
@@ -117,7 +145,7 @@ display:block;
 } 
 #resultats{
     background: #CF1679;
-    color: red;
+    color: #fff;
     font-weight: 600;
     width: 200px;
     border: 0;

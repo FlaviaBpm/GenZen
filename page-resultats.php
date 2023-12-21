@@ -6,13 +6,13 @@ get_header();?>
 <div class="pgresults">
     <h1 class="rtitle">Résultats</h1>
     <div class="chart-container">
-        <canvas id="quizChart" width="400" height="200"></canvas>
+        <canvas id="quizChart"></canvas>
     </div>
 
     <h5 class="res">Vos résultats suggèrent que vous souffrez d'un TDA/TDAH.</h5> 
     <p>Cependant, ce quiz ne remplace pas un diagnostic approprié d'un professionnel de la santé et nous vous encourageons à prendre rendez-vous avec un de nos médecins dès maintenant en cliquant juste <a href="#">Ici!</a></p>
 
-    <div class="container">
+    <div class="containerr">
       <div class="cardr">
             <div class="row">
                 <div class="col-md-4">

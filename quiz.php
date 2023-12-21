@@ -46,7 +46,6 @@ wp_reset_postdata();
 
 
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>\quiz.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <lik href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
@@ -87,11 +86,9 @@ wp_reset_postdata();
     <!-- Your existing HTML content here -->
     <div class="end-screen">
   <h1>Merci d'avoir repondu a nos questions! <br> Pour découvrir vos résultats en détail , inscrivez-vous ici </h1>
-  <h6 class="diag">Les résultats indiquent la possibilité d'un diagnostic<span> de TDA/H</span></h6>
+  <h6 class="diag">Vos résultats suggèrent que <span> de TDA/H</span></h6>
   <button id="resultats">Resultats</button>
 
-<!-- Add this canvas element where you want the chart to be displayed -->
-<canvas id="resultChart"></canvas>
 
   
     <script>
@@ -154,13 +151,6 @@ const init = () => {
         }
     });
 
-    els.endBtn.addEventListener('click', () => {
-            const recordedAnswersParam = recordedAnswers.join(',');
-            // window.location.href = `/results/?answers=${recordedAnswersParam}`;
-            
-            // Display chart instead of redirecting
-            displayResultChart(recordedAnswers);
-        });
 };
 
 const calculateScore = () => {
@@ -195,48 +185,6 @@ const displayQuestion = (index) => {
 const progressPercentage = ((index + 1) / questions.length) * 100;
 els.progressBar.style.width = progressPercentage + '%';
 };
-
-const displayResultChart = (recordedAnswers) => {
-    const canvas = document.getElementById('resultChart');
-    const ctx = document.getElementById('resultChart').getContext('2d');
-
-        // Count occurrences of each diagnosis
-        const diagCount = recordedAnswers.reduce((acc, diag) => {
-            acc[diag] = (acc[diag] || 0) + 1;
-            return acc;
-        }, {});
-
-        const diagLabels = Object.keys(diagCount);
-        const diagData = Object.values(diagCount);
-
-        // Create a bar chart
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: diagLabels,
-                datasets: [{
-                    label: 'Resultats du quiz',
-                    data: diagData,
-                    backgroundColor: '#CF1679',
-                    borderColor: '#ccc',
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false, // Set to false to allow customization of size
-    
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-
-        displayScreen('end');
-    };
-
 
 const displayScreen = (screenName) => {
     els.welcomeScreen.style.display = 'none';

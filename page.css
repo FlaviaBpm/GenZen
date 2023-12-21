@@ -34,218 +34,12 @@ padding-bottom: 15%;
 }
 
 
-/* connexion-inscription*/
-
-
-#prenom{
-  background-color: #EBE8ED;
-
-}
-
-#nom{
-  background-color: #EBE8ED;
-  border-radius: 30px;
-  width: 75%;
-
-}
-
-#email{
-  background-color: #EBE8ED;
-  border-radius: 30px;
-  width: 75%;
-}
-
-#password{
-  background-color: #EBE8ED;
-  border-radius: 30px;
-  width: 75%;
-}
-
-.login-container{
-  width: 390px;
-  padding: 30px;
-  background-color: #fff;
-  margin: 100px auto;
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-border-radius: 30px;
-border: #474747 2px;
-}
-
-h2 {
-  font-family: "Cooper Std Black";
-  text-align: center;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.input-field {
-  margin-bottom: 20px;
-  justify-content: center;
-}
-
-
-.input-field label {
-  display: block;
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.input-field input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border: 10px;
-  font-size: 14px;
-  color: #333;
-}
-
-.checkbox {
-  margin-bottom: 20px;
-}
-
-.checkbox input {
-  margin-right: 5px;
-}
-
-.checkbox label {
-  color: #333;
-}
-
-.login-btn {
-  background-color: #FFF;
-  border-radius: 30px;
-  border-color: EBE8ED;
-  width: 30%;
-  height: 5%;
-}
-
-
-
-/* a propos*/
-.card-body-1{
-  padding-top: 20%;
-  padding-right: 5%;
-  margin-right: 10%;
-}
-
-.card-text{
-  padding-right: 5%;
-
-}
-
-.accueil-fond{
-  justify-content: space-between;
-}
-
-.btn-primary {
-  --bs-btn-color: #fff;
-  --bs-btn-bg: #F4B425;
-  --bs-btn-border-color: #F4B425;
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #f0ca76;
-  --bs-btn-hover-border-color: F4B425;
-  --bs-btn-focus-shadow-rgb: 66,70,73;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: F4B425;
-  --bs-btn-active-border-color: F4B425;
-  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: F4B425;
-  --bs-btn-disabled-border-color: F4B425;
-}
-
-
-/*police d'écriture*/
-h1 {
-  font-family: "Cooper Std Black", serif;
-  font-weight: 400;
-  font-size: 55px;
-  font-style: normal;
-}
-
-h7{
-  font-family: "Poppins";
-}
-
-
-/*Qui sommes-nous*/
-.container-bl{
-  background-color:white;
-}
-
-
-/* syndrome*/
-.container-synd{
-  padding-left: 5%;
-  padding-right: 5%;
-  font-family: "Poppins";
-}
-
-.card-body{
-  margin: auto;
-text-align: center ;
-}
-
-.btn-info{
-  margin: center;
-  border-radius: 12px;
-}
-
-.row{
-  row-gap: 3rem;
-  margin: 20px;
-}
-
-.row-synd{
-  width: 90%;
-    margin: auto;
-    row-gap: 2rem;
-}
-
-.card{
-  position: relative;
-    display: flex;
-    overflow: hidden;
-    padding: 2rem;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-clip: border-box;
-    border: 1px solid red(0, 0, 0, 0.125);
-}
-
-.text-synd{
-  text-align: center;
-}
-
-.page-id-185{
-background-color: #FFF6E1;
-}  
-
-.container-synd{
-padding-top: 5%;
-/* padding-left: 150px;
-padding-right: 150px; */
-}
-
-.wp-block-embed__wrapper{
-  justify-content: center;
-}
-
-.postid-151 {
-  background-color: #FFF6E1;
-}
-.wp-block-heading {
-  margin-bottom: 20px;
-}
-
-.page-id-75{
-  background-color: #DECCE8;
-}
-
 /*footer*/
 li{
   margin: 10px ;
+  padding: 4px 6px;
+  color: #fff; /* Change to your desired color */
+  text-decoration: none;
 }
 .col-centered {
   display: flex;
@@ -287,6 +81,13 @@ li{
 }
 .nav-link{
   color: #fff;
+  padding: 8px 0 ;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 6px ;
 }
 
 /*page rdv*/
@@ -476,7 +277,9 @@ h3{
   font-size: 14px;
   font-weight: 550;
 }
-
+.pgresults a{
+  color: #F4B425;
+}
 .pgresults p {
   font-size: 14px;
   margin-bottom: 40px;
@@ -493,4 +296,11 @@ h3{
 
 .pgresults .row{
   align-items: center;
+}
+.btn-secondary{
+  border:none;
+  border-radius: 12px;
+}
+.containerr{
+  padding: 0;
 }
