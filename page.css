@@ -1,3 +1,40 @@
+/* page 404 */
+.error * {
+  text-align: center;
+  padding: 20px;
+  color: #474747;
+}
+.error  {
+  background-image: url(assets/img/bgconnex.png);
+  background-size: cover;
+  background-position-x: center;
+}
+
+.error p {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.error img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0%;
+  }
+
+
+.error a {
+  color: #CF1679;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.error a:hover {
+  text-decoration: none;
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -88,6 +125,7 @@ li{
 }
 .custom-search-input {
   width: 100%;
+  color: #fff;
   border: 1px solid #ccc;
   border-radius: 100px;
   padding: 10px 100px 10px 20px; 
@@ -149,14 +187,14 @@ a{
   margin-top: 50px;
 	font-family: "Poppins", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	color: #474747;
-	
+}
 
  input {
 		font: inherit;
 		color: inherit;
 		appearance: none;
 		outline: none;
-		border: 0;
+		border: none;
 		background-color: transparent;
 		
 		&[type=date] {
@@ -171,7 +209,7 @@ a{
 			border-left-width: 0;
 		}
 	}
-}
+
 
 .btn-success {
     color: #fff;
