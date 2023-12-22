@@ -1,16 +1,17 @@
+
 <link href="<?php echo get_template_directory_uri(); ?>/page.css" rel="stylesheet"/>
+<div class="sticky"> Découvre ton bien-être mental avec notre quiz! </div>
 <?php /* Template Name: results Template */ 
 
 get_header();?>
 
 <div class="pgresults">
     <h1 class="rtitle">Résultats</h1>
-    </div>
-
+    <img id="chart" width="400" height="200" src="<?php echo get_template_directory_uri();?>\assets\img\chart.png">
     <h5 class="res">Vos résultats suggèrent que vous souffrez d'un TDA/TDAH.</h5> 
     <p>Cependant, ce quiz ne remplace pas un diagnostic approprié d'un professionnel de la santé et nous vous encourageons à prendre rendez-vous avec un de nos médecins dès maintenant en cliquant juste <a href="#">Ici!</a></p>
 
-    <div class="containerr">
+    <div class="container">
       <div class="cardr">
             <div class="row">
                 <div class="col-md-4">
@@ -100,6 +101,5 @@ get_header();?>
 get_footer();
 ?>
       
-
 
 

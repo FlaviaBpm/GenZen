@@ -86,7 +86,7 @@ wp_reset_postdata();
     <!-- Your existing HTML content here -->
     <div class="end-screen">
   <h1>Merci d'avoir repondu a nos questions! <br> Pour découvrir vos résultats en détail , inscrivez-vous ici </h1>
-  <h6 class="diag">Vos résultats suggèrent que <span> de TDA/H</span></h6>
+  <h6 class="diag">Vos résultats suggèrent que vous <span> de TDA/H</span></h6>
   <button id="resultats" >Resultats</button>
 
 

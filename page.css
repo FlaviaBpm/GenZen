@@ -1,8 +1,38 @@
-/*fond de page*/
-  
-body{
-  font-family: "Poppins" ;
-background-color: #FFEDF8;}
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #474747;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+#chart {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.bi-arrow-right{
+  color: #fff;
+}
+
+*{
+  font-family: "Poppins";
+}
+/*police d'écriture*/
+h1 {
+  font-family: "Cooper Std Black", serif;
+  font-weight: 400;
+  font-size: 55px;
+  font-style: normal;
+}
+
+h7{
+  font-family: "Poppins";
+}
 
 
 /*navbar*/
