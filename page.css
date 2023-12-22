@@ -1,5 +1,12 @@
-*{
+
+@font-face {
   font-family: "Poppins";
+  src: url('./assets/fonts/Poppins-Regular.ttf') format("ttf") ;
+}
+
+
+*{
+  font-family: "Poppins", sans-serif ;
 }
 /* header */
 .sticky {
@@ -75,6 +82,58 @@ a{
   color: #CF1679;
   text-decoration: none;
   padding: 8px 6px ;
+}
+
+
+
+/* page 404 */
+
+.error{
+  max-width: 750px;
+  padding: 30px;
+  background-color: #fff;
+  margin: 100px auto;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+border-radius: 30px;
+border: #474747 2px;
+
+}
+
+
+.error * {
+  text-align: center;
+  padding: 20px;
+  color: #474747;
+}
+.error404  {
+  background-image: url(assets/img/bgconnex.png);
+  background-size: cover;
+  background-position-x: center;
+}
+
+.error p {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.error img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0%;
+  }
+
+
+.error a {
+  color: #CF1679;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.error a:hover {
+  text-decoration: none;
 }
 
 
@@ -358,6 +417,8 @@ padding-bottom: 15%;
 }
 
 
+
+
 #wpmem_reg form legend {
   display: none;
 }
@@ -455,15 +516,11 @@ justify-content: space-between;
 
 /*police d'écriture*/
 h1 {
-  font-family: "Cooper Std Black", serif;
+  font-family: "cooper-black-std", serif;
   font-weight: 400;
-  font-size: 55px;
   font-style: normal;
 }
 
-h7{
-  font-family: "Poppins";
-}
 
 
 /*Qui sommes-nous*/
@@ -474,7 +531,7 @@ h7{
 }
 
 .img-fluid{
-  padding-top: 13%;
+  padding-top: 50%;
 }
 
 .container-who{
@@ -596,7 +653,7 @@ text-align: center ;
 }
 
 .btn-info{
-  margin: center;
+  margin: auto;
   border-radius: 6rem;
 }
 
@@ -620,7 +677,6 @@ text-align: center ;
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
-    border: 1px solid red(0, 0, 0, 0.125);
 }
 
 .text-synd{
@@ -764,7 +820,7 @@ h2 {
 .login-btn {
   background-color: #FFF;
   border-radius: 30px;
-  border-color: EBE8ED;
+  border-color: #EBE8ED;
   width: 30%;
   height: 5%;
 }
@@ -806,12 +862,15 @@ h2 {
 
 
 /*police d'écriture*/
-h1 {
-  font-family: "Cooper Std Black", serif;
+h1.card-title {
+  /* font-family: "Cooper Std Black", serif; */
   font-weight: 400;
   font-size: 55px;
   font-style: normal;
 }
+
+
+
 
 
 
@@ -834,13 +893,14 @@ text-align: center ;
 }
 
 .btn-info{
-  margin: center;
+  margin: auto;
   border-radius: 12px;
 }
 
-.row{
+.fond .row{
   row-gap: 3rem;
   margin-bottom: 6%;
+  margin-top: 3%;
 }
 
 .row-synd{
@@ -859,7 +919,7 @@ text-align: center ;
     min-width: 0;
     word-wrap: break-word;
     background-clip: border-box;
-    border: 1px solid red(0, 0, 0, 0.125);
+    
 }
 
 .text-synd{
@@ -935,7 +995,6 @@ padding-right: 150px; */
 
 /*page rdv*/
 .rdv{
-    font-family: 'Poppins';
     background: #fff;
     border:#8EDD93 4px solid;
     width: 70%;
@@ -1012,7 +1071,6 @@ padding-right: 150px; */
  }
 
 .pgresults {
-  font-family: 'Poppins';
   background: #fff;
   border: #CF1679 4px solid;
   width: 70%;

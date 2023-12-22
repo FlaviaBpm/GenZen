@@ -7,15 +7,16 @@
         <div class="container col-8">
             <div class="row">
 
-                <div class="col-lg-6 order-last"> <!-- Utilisez col-lg-6 pour donner plus d'espace sur des écrans plus larges -->
+                <div class="col-lg-4 order-last"> <!-- Utilisez col-lg-6 pour donner plus d'espace sur des écrans plus larges -->
                     <div class="image-acceuil">
                         <img src="<?php the_post_thumbnail_url(); ?>" alt="image fond d'accueil" class="img-fluid">
                     </div>
                 </div>
 
-                <div class="col-lg-6 order-first"> <!-- Utilisez col-lg-6 pour donner plus d'espace sur des écrans plus larges -->
+                <div class="col-lg-8 order-first"> <!-- Utilisez col-lg-6 pour donner plus d'espace sur des écrans plus larges -->
                     <div class="card-accueil">
                         <div class="card-body-1">
+                            <div class="title-coo"></div>
                             <h1 class="card-title">Cultivez votre sérénité mentale</h1>
                             
                             <h5 class="card2-title" style="color:#F4B425"> Comme les fleurs, donnez-vous le temps de grandir et de vous épanouir</h5>

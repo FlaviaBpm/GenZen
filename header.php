@@ -10,25 +10,27 @@
   <title>GenZen</title>
 
               <!-- Font popin -->
-               <link rel="preconnect" href="https://fonts.googleapis.com">
+
+              <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;300;400;600;550;700;800;900&display=swap');
+</style>
+               <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
               <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;550;700;800;900&display=swap" rel="stylesheet">
+              <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;550;700;800;900&display=swap" rel="stylesheet"> -->
  
               <!-- font Cooper -->
 
-               <link rel="stylesheet" href="https://use.typekit.net/jtd0nll.css"> 
-
+              <link rel="stylesheet" href="https://use.typekit.net/jtd0nll.css">
+              
   <?php wp_head(); ?>
   
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
 
 
 </head>
-<body
-<?php body_class(); ?>>
+<body <?php body_class(); ?>>
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">

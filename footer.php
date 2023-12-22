@@ -1,4 +1,4 @@
-<link href="<?php echo get_template_directory_uri();?>/page.css" rel="stylesheet"/>
+<link href="<?php echo get_template_directory_uri();?>/page.css" rel="stylesheet">
 <footer>
   <div style="background-color: #474747;">
     <div class="container text-light py-2">

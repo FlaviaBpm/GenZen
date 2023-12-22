@@ -4,8 +4,7 @@
 
   <?php wp_head(); ?>
 </head>
-<body
-<?php body_class(); ?>>
+<body <?php body_class(); ?>>
 <?php echo do_shortcode("[wpmem_profile]"); ?>
 
 <link href="<?php echo get_template_directory_uri();?>/page.css" rel="stylesheet"/>
