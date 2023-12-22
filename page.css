@@ -88,7 +88,7 @@ img.card-img-top{
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
+} 
 
 div.my-5{
   justify-content: center;
@@ -224,8 +224,9 @@ border: #474747 2px;
 
 }
 input.buttons {
-  height: 4%;
-  width: 25%;
+  text-align: center;
+  height: 5%;
+  width: 55%;
   border-radius: 30px;
 border-color: #CF1679;
 background-color: #FFF;
@@ -539,6 +540,11 @@ h7{
 
 /* syndrome*/
 
+
+.mb-4{
+  border-radius: 2rem;
+}
+
 .wp-block-embed__wrapper{
  text-align: center;
  padding-top: 3%;
@@ -845,6 +851,7 @@ text-align: center ;
 
 .card{
   position: relative;
+  border-radius: 2rem;
     display: flex;
     overflow: hidden;
     padding: 2rem;
@@ -927,18 +934,16 @@ padding-right: 150px; */
 }
 
 /*page rdv*/
-/*page rdv*/
 .rdv{
-  font-family: 'Poppins';
-  background: #fff;
-  border:#8EDD93 4px solid;
+    font-family: 'Poppins';
+    background: #fff;
+    border:#8EDD93 4px solid;
     width: 70%;
-    height: 1300px;
+    min-height: 1300px;
     border-radius: 35px;
     padding: 50px;
-    margin-top: 30px;
-    margin-right: 100px;
-    float: right;
+    margin:auto;
+  
 
 }
 
@@ -964,12 +969,13 @@ padding-right: 150px; */
 		color: inherit;
 		appearance: none;
 		outline: none;
-		border: 0;
+		border: none;
 		background-color: transparent;
 		
 		&[type=date] {
 			width: 10rem;
 			padding: .25rem 0 .25rem .5rem;
+      border: none;
 			border-right-width: 0;
 		}
 		
@@ -993,7 +999,20 @@ padding-right: 150px; */
 
 /* page results */
 
+
+#chart {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.bi-arrow-right{
+  color: #fff;
+ }
+
 .pgresults {
+  font-family: 'Poppins';
   background: #fff;
   border: #CF1679 4px solid;
   width: 70%;
@@ -1005,7 +1024,7 @@ padding-right: 150px; */
 .body-card{
   text-align: left;
 }
-.card-img-top{
+.card-img-top-r{
   max-width: 100%;
   height: auto;
   display: block;
@@ -1015,6 +1034,7 @@ padding-right: 150px; */
   color:#CF1679;
   margin-bottom: 15px;
   font-size: 30px;
+  text-align: center;
 }
 .res{
   font-size: 14px;
@@ -1040,13 +1060,17 @@ padding-right: 150px; */
 .pgresults .row{
   align-items: center;
 }
-.btn-secondary{
+.btn-secondary, .btn-primary, .btn-info, .btn-success, .btn-danger, .btn-warning {
   border:none;
   border-radius: 12px;
+  padding: 10px;
 }
 .containerr{
   padding: 0;
 }
+
+
+
 /*page profil*/
 
 .profil{
@@ -1127,7 +1151,7 @@ padding-right: 150px; */
 }
 label,input{
   display:flex;
-  flex-direction:column;
+  flex-direction:row;
 }
 .phone {
   width: 80%;

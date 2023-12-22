@@ -44,7 +44,19 @@ add_action('init', 'create_post_type');
 
 
 
-
+// page rdv
+function mon_code_shortcode() {
+  ob_start();
+  ?>
+ <div class="datetimepicker">
+ <input type="date" id="date" value="2023-12-22">
+ <span></span>
+ <input type="time" id="time" value="08:00">
+ </div>
+ <?php
+  return ob_get_clean();
+ }
+ add_shortcode('mon_code', 'mon_code_shortcode');
 
 
 

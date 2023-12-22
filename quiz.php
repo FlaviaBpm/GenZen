@@ -94,7 +94,7 @@ wp_reset_postdata();
     <?php if (is_user_logged_in()) : ?>
         <a href="https://genzen.emu.isfsc.be/resultats/"> <button id="resultats">Résultats</button></a>
     <?php else : ?>
-        <a href="http://localhost:8888/test-wordpress/resultats/"> <button id="resultats">Connectez-vous pour voir les résultats</button></a>
+        <a href="https://genzen.emu.isfsc.be/connexion/"> <button id="resultats">Connectez-vous pour voir les résultats</button></a>
 
     <?php endif; ?>
 </div>
