@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<div class="sticky"> Découvre ton bien-être mental avec notre quiz<a href="http://localhost:8888/test-wordpress/quiz/">ici</a>!</div>
+<div class="sticky"> Découvre ton bien-être mental avec notre quiz<a href="https://genzen.emu.isfsc.be/quiz/">ici</a>!</div>
 
 <head>
   <meta charset="UTF-8">
@@ -32,7 +32,7 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
 
-      <a class="navbar-brand" href="http://localhost:8888/test-wordpress/"><img id="logo" src="<?php echo get_template_directory_uri();?>/assets/img/Logo.png" alt="le logo"></a>
+      <a class="navbar-brand" href="<?= home_url() ?>"><img id="logo" src="<?php echo get_template_directory_uri();?>/assets/img/Logo.png" alt="le logo"></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -54,9 +54,9 @@
     <div class="dropdown">
   <button class="dropbtn"><i class="bi bi-caret-down-fill"></i></button>
   <div class="dropdown-content">
-    <a href="http://localhost:8888/test-wordpress/profil/">Profil</a>
-    <a href="http://localhost:8888/test-wordpress/resultats/">Résultats</a>
-    <a href="http://localhost:8888/test-wordpress/rdv/">Rendez-vous</a>
+    <a href="https://genzen.emu.isfsc.be/profil/">Profil</a>
+    <a href="https://genzen.emu.isfsc.be/resultats/">Résultats</a>
+    <a href="https://genzen.emu.isfsc.be/rdv/">Rendez-vous</a>
   </div>
 </div></nav>
 

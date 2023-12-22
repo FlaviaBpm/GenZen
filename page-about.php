@@ -25,7 +25,7 @@
                                 mental dès aujourd'hui !
                             </p>
                             
-                            <a href="http://localhost:8888/test-wordpress/quiz/" class="btn btn-primary">Démarrer le test</a>
+                            <a href="https://genzen.emu.isfsc.be/quiz/" class="btn btn-primary">Démarrer le test</a>
                         </div>
                     </div>
                 </div>

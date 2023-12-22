@@ -1,3 +1,6 @@
+*{
+  font-family: "Poppins";
+}
 /* header */
 .sticky {
   position: sticky;
@@ -12,6 +15,8 @@
 
 
 /*footer*/
+
+
 li{
   margin: 10px ;
   padding: 4px 6px;
@@ -67,7 +72,7 @@ li{
 }
 
 a{
-  color: #fff;
+  color: #CF1679;
   text-decoration: none;
   padding: 8px 6px ;
 }
@@ -279,7 +284,7 @@ border: #474747 2px;
   
 body{
   font-family: "Poppins" ;
-background-color: #EBE8ED;
+background-color: #FFEDF8;
 }
 
 
@@ -641,18 +646,7 @@ padding-bottom: 5%;
 }
 
 
-/* profil */
 
-/*fond de page*/
-  
-body{
-  font-family: "Poppins" ;
-background-color: #FFEDF8;
-/* background-image: url('assets/img/bgconnex.png');  Remplacez le chemin par le chemin réel de votre image */
-    /* background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la fenêtre */
-    /* background-position: center; /* Centre l'image horizontalement et verticalement */
-    /* background-repeat: no-repeat; /* Empêche la répétition de l'image */
-}
 
 
 /*navbar*/
@@ -813,9 +807,7 @@ h1 {
   font-style: normal;
 }
 
-h7{
-  font-family: "Poppins";
-}
+
 
 
 /*Qui sommes-nous*/
@@ -828,7 +820,6 @@ h7{
 .container-synd{
   padding-left: 5%;
   padding-right: 5%;
-  font-family: "Poppins";
 }
 
 .card-body{
@@ -895,6 +886,17 @@ padding-right: 150px; */
 }
 
 /*footer*/
+
+.cond{
+  padding-bottom: 3%;
+  padding-left: 6% ;
+  padding-right: 6%;
+}
+.cond h1 {
+  text-align: center;
+  padding: 5%;
+
+}
 .custom-search {
   position: relative;
   width: 300px;
@@ -925,6 +927,7 @@ padding-right: 150px; */
 }
 
 /*page rdv*/
+/*page rdv*/
 .rdv{
   font-family: 'Poppins';
   background: #fff;
@@ -953,9 +956,10 @@ padding-right: 150px; */
   margin-top: 50px;
 	font-family: "Poppins", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 	color: #474747;
-	
+}
 
- input {
+
+.input {
 		font: inherit;
 		color: inherit;
 		appearance: none;
@@ -975,7 +979,7 @@ padding-right: 150px; */
 			border-left-width: 0;
 		}
 	}
-}
+
 
 .btn-success {
     color: #fff;
@@ -990,7 +994,6 @@ padding-right: 150px; */
 /* page results */
 
 .pgresults {
-  font-family: 'Poppins';
   background: #fff;
   border: #CF1679 4px solid;
   width: 70%;
@@ -1047,7 +1050,6 @@ padding-right: 150px; */
 /*page profil*/
 
 .profil{
-  font-family: 'Poppins';
   background: #CDB4DB;
 
     width: 70%;
@@ -1062,7 +1064,6 @@ padding-right: 150px; */
 
 
 .sidenavP {
-  font-family: 'Poppins';
   width: 240px;
   position: fixed;
   z-index: 1;

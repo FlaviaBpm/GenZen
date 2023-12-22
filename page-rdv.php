@@ -1,5 +1,7 @@
-<?php /* Template Name: rdv Template */ ?>
 
+
+<?php /* Template Name: rdv Template */ ?>
+<link href="<?php echo get_template_directory_uri();?>/page.css" rel="stylesheet"/>
 <?php  ?>
 
 
